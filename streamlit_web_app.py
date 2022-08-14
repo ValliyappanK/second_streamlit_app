@@ -18,6 +18,7 @@ df=pandas.DataFrame(my_catalog)
 #temp write the data frame
 streamlit.write(df)
 
+/*
 #put the first column into a list
 color_list=df[0].values.tolist()
 #print (color_list)
@@ -40,3 +41,4 @@ streamlit.image(
 streamlit.write('Price:',df2[1])
 streamlit.write('Sizes Available:',df2[2])
 streamlit.write(df2[3])
+*/
