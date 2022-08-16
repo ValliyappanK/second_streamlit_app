@@ -29,7 +29,7 @@ option=streamlit.selectbox('Pick a sweatsuit color or style:',list(color_list))
 product_caption='Our warm, comfortable, '+option+' sweatsuit!!'
 
 #using caption to get info from db
-my_crsr.execute("select direct_url, prize, size_list, upsell_product_desc from catalog_for_website where color_or_style= "+option+";")
+my_crsr.execute("select direct_url, prize, size_list, upsell_product_desc from catalog_for_website where color_or_style= '"+option+"';")
 df2=my_crsr.fetchone()
 
 streamlit.image(
